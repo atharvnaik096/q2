@@ -68,6 +68,30 @@
                 font-size: 1em;
             }
         }
+
+/* Styles for mobile devices */
+.container{
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  /* Styles for tablets and larger screens */
+  .container {
+    padding: 2rem;
+  }
+
+  .container {
+    flex: 1 1 30%; /* On larger screens, increase the base size */
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Styles for desktop */
+  .container {
+    flex: 1 1 20%; /* Even smaller base size for larger screens */
+  }
+}
+        
     </style>
 </head>
 <body>
